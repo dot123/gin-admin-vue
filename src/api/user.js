@@ -34,7 +34,7 @@ export function deleteUser(data) {
 
 export function login(data) {
   return request({
-    url: '/login',
+    url: '/api/v1/login',
     method: 'post',
     data
   })
@@ -42,21 +42,21 @@ export function login(data) {
 
 export function getInfo() {
   return request({
-    url: '/user/info',
+    url: '/api/v1/user/info',
     method: 'get'
   })
 }
 
 export function refreshToken() {
   return request({
-    url: '/user/refreshToken',
+    url: '/api/v1/refreshToken',
     method: 'get'
   })
 }
 
 export function logout() {
   return request({
-    url: '/user/logout',
+    url: '/api/v1/user/logout',
     method: 'post'
   })
 }

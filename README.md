@@ -1,8 +1,6 @@
 ## 后端工程
 基于 GIN + GORM  + WIRE 实现的RBAC权限管理脚手架[gin-admin-gorm](https://github.com/dot123/gin-admin-gorm)
 
-基于 GIN + XORM  + WIRE 实现的RBAC权限管理脚手架[gin-admin-xorm](https://github.com/dot123/gin-admin-xorm)
-
 ## Build Setup
 
 ```bash

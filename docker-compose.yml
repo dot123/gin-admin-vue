@@ -1,0 +1,9 @@
+volumes:
+  data:
+services:
+  myapp:
+    image: gin-admin-vue
+    ports:
+      - 8080:8080
+    volumes:
+      - data:/data

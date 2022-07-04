@@ -100,6 +100,24 @@ export const asyncRoutes = [{
     meta: { title: '服务器状态', icon: 'table' }
   }]
 },
+{
+  path: '/msgManage',
+  component: Layout,
+  redirect: '/msgManage',
+  name: '消息管理',
+  meta: {
+    title: '消息管理',
+    icon: 'menu',
+    roles: ['admin']
+  },
+  children: [{
+    path: 'updateNotice',
+    name: '设置更新公告',
+    component: () =>
+                    import ('@/views/msgManage/updateNotice'),
+    meta: { title: '设置更新公告', icon: 'table' }
+  }]
+},
 { path: '*', redirect: '/404', hidden: true }
 ]
 
